@@ -71,7 +71,7 @@ The first time, Horizon Calc asks you to pick a template: **Blank**, **Factory**
 
 Along the top is a menu bar, as in Excel: **File**, **Edit**, **Insert**, **Format**, **Formulas**, **Data**, **View** and **Examples** (to add another example next to your documents). The usual shortcuts work: copy and paste (also to and from Excel), undo and redo, fill down, find and replace, inserting rows and columns. **Insert › Chart** draws the cells you selected as a chart that moves with the timeline.
 
-Above the 3D grid you can switch to the example's **animation** (✦), which plays along with the timeline.
+Above the 3D grid you can switch to the example's **animation** (✦), which plays along with the timeline. When the grid gets crowded, hide a sheet with the ✕ on its label (**Show all** brings them back), or show only the totals, or only the sheet you're working on and the ones it uses, with the **Labels** box.
 
 Your documents are kept on your computer, in the app.
 
