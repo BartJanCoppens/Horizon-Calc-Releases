@@ -1,6 +1,6 @@
 # Horizon Calc
 
-Horizon Calc is a spreadsheet with a 4D spin. Your sheets sit at places in three dimensions you choose (products × markets × scenarios, stores × regions, projects × phases × teams…) and their numbers change over time. You see them as a 3D grid of cells whose blocks grow and shrink as the timeline plays, and as ordinary Excel-sized sheets with formulas. Start from a template (a business case, a factory, a retail network, a project portfolio) or a blank document, and let an AI help draft dimensions and sheets if you like. It belongs to the Horizon suite, next to [Horizon](https://github.com/BartJanCoppens/Horizon) for presentations.
+Horizon Calc is a spreadsheet with a 4D spin. Your sheets sit at places in three dimensions you choose (products × markets × scenarios, stores × regions, projects × phases × teams…) and their numbers change over time. You see them as a 3D grid of cells whose blocks grow and shrink as the timeline plays, and as ordinary Excel-sized sheets with formulas. Start from a template (a business case, a factory, a retail network, a project portfolio, or one of four tax and legal examples) or a blank document. Every example also comes with a lively animation of its own numbers, and if you like, an AI helps draft dimensions and sheets, or builds a small app on top of your cells. It belongs to the Horizon suite, next to [Horizon](https://github.com/BartJanCoppens/Horizon) for presentations.
 
 It works on **Mac**, **Windows** and **Linux**. It's free and needs no account.
 
@@ -67,16 +67,24 @@ Horizon Calc then appears in your applications menu.
 
 ## 3. Getting started
 
-The first time, Horizon Calc asks you to pick a template: **Blank**, **Factory**, **Business case**, **Retail network** or **Project portfolio**. Each opens with its dimensions, sheets, formulas and a timeline you can play. The ⋯ menu next to the document's name creates, renames and deletes documents, changes the dimensions, and saves a document as your own template. Your documents are kept on your computer, in the app.
+The first time, Horizon Calc asks you to pick a template: **Blank**, **Factory**, **Business case**, **Retail network** or **Project portfolio**, or one of the tax and legal examples: **Pillar Two** (the 15% global minimum tax), **Holding structure**, **Claims and litigation** and **Advisory firm**. Each opens with its dimensions, sheets, formulas and a timeline you can play. The figures in the examples are made up to show how it works: replace them with your own, and don't take them as tax or legal advice.
+
+Along the top is a menu bar, as in Excel: **File**, **Edit**, **Insert**, **Format**, **Formulas**, **Data**, **View** and **Examples** (to add another example next to your documents). The usual shortcuts work: copy and paste (also to and from Excel), undo and redo, fill down, find and replace, inserting rows and columns. **Insert › Chart** draws the cells you selected as a chart that moves with the timeline.
+
+Above the 3D grid you can switch to the example's **animation** (✦), which plays along with the timeline.
+
+Your documents are kept on your computer, in the app.
 
 ## 4. Connect Claude (optional)
 
-You can use everything without AI. To let Claude draft sheets and dimensions from a sentence, connect it with your own key:
+You can use everything without AI. To let Claude draft sheets and dimensions from a sentence, or build a small **app** on cells you select (**Insert › App from selection…**: describe how it should look and what it should do), connect it with your own key:
 
 1. Sign up at [console.anthropic.com](https://console.anthropic.com), add some credit under **Billing**, then create a key under **API keys**. You pay Anthropic for what you use.
 2. In Horizon Calc, open ⋯ › **Claude key…**, paste the key and click **Save key**.
 
-Your key is stored encrypted by your computer's keychain and is only ever sent to Anthropic. Without a key, the AI panel makes simpler drafts by itself.
+Your key is stored encrypted by your computer's keychain and is only ever sent to Anthropic. Without a key, the AI panel makes simpler drafts by itself, and apps start from a simple built-in design.
+
+Apps and animations run walled off from the rest of Horizon Calc: they can't see your other documents or your key, and can't reach the internet. Changing a number in an app changes nothing in your sheet until you click **Apply to model**.
 
 ## Updates
 
