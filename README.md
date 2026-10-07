@@ -71,6 +71,10 @@ The first time, Horizon Calc asks you to pick a template: **Blank**, **Factory**
 
 Along the top is a menu bar, as in Excel: **File**, **Edit**, **Insert**, **Format**, **Formulas**, **Data**, **View** and **Examples** (to add another example next to your documents). The usual shortcuts work: copy and paste (also to and from Excel), undo and redo, fill down, find and replace, inserting rows and columns. Type numbers the way you write them: 1,250.50 or 1.250,50, 15% or €1.250, as in Excel. Double-click the edge of a column letter to fit the column to its text, and use **Format › Plain number** to show years as 2026 rather than 2,026. **Insert › Chart** draws the cells you selected as a chart that moves with the timeline. To note where a table's figures come from, select it and click **Add source**: one source covers every number in it. **Data › Goal Seek…** finds the value of an input that makes a formula reach a target ("the royalty rate that brings the effective rate to 15%"), and beside the selected cell's value a small line shows it over time: click it to jump to that period.
 
+### Where the figures come from
+
+Every input has a small dot: amber when it has no source, violet when the figure is made up as an example (illustrative: all the examples' figures are), green once a source backs it. Click the source text in the status bar to open the input's card. There you can quote a passage from a source, say it's your own figure and what it rests on, or **Check with AI**. Statements you write about the numbers ("The site is cash-positive by M18") get the same treatment. **Sources…** keeps a document's web pages, documents (PDF, text, Markdown, CSV, TSV or JSON, kept on your computer) and notes of your own, and **All documents** finds a source you used elsewhere. From there, save a **Report** of every figure and what backs it as a web page, the sources as **Citations** (BibTeX) or a **Spreadsheet**.
+
 Above the 3D grid you can switch to the example's **animation** (✦), which plays along with the timeline. When the grid gets crowded, hide a sheet with the ✕ on its label (**Show all** brings them back), or show only the totals, or only the sheet you're working on and the ones it uses, with the **Labels** box. A document with many sheets starts by labelling only its totals; your choice is kept with the document.
 
 Your documents are kept on your computer, in the app.
@@ -84,13 +88,13 @@ Horizon Calc is made and tested with Claude, and also works with OpenAI, Gemini,
 1. Open **File › Models & keys…**. Next to a provider, **Get a key** opens its page: for Claude, sign up at [console.anthropic.com](https://console.anthropic.com), add some credit under **Billing**, and create a key under **API keys**. You pay the provider for what you use.
 2. Click **Add key…**, paste the key and click **Save**. **Test** checks it and lets you choose one of its models.
 
-Keys are stored encrypted by your computer's keychain and only ever sent to their own provider. The AI is told your sheets' labels and formats, never their numbers. Without a model, the AI panel makes simpler drafts by itself, and apps and animations start from simple built-in designs.
+Keys are stored encrypted by your computer's keychain and only ever sent to their own provider. The AI is told your sheets' labels and formats, never their numbers, with one exception: **Check with AI** sends the figures and statements you chose to check, with your sources (documents included). The first time in a document, it asks whether it may also search the web (with Claude only). Without a model, the AI panel makes simpler drafts by itself, and apps and animations start from simple built-in designs.
 
 ### Share your work
 
-- **An app as a file**: under an app, **Export…** saves it as one HTML file that opens in any browser, offline, with only the cells it needs (you see which sheets before saving). Changes there are what-ifs and are never saved.
+- **An app as a file**: under an app, **Export…** saves it as one HTML file that opens in any browser, offline, with only the cells it needs (you see which sheets before saving). Changes there are what-ifs and are never saved. Its **Sources** panel shows what backs its inputs, naming only web pages: your own documents are never named or quoted.
 - **An animation**: **Export…** on an animation saves it for a [Horizon](https://github.com/BartJanCoppens/Horizon) presentation (it plays live on the slide), as an MP4 video, or as a PowerPoint slide with the video.
-- **A slide**: **Insert as slide › PowerPoint…** saves the slide frame as a PowerPoint slide, with the sheet as a table or the rows as a chart.
+- **A slide**: **Insert as slide › PowerPoint…** saves the slide frame as a PowerPoint slide, with the sheet as a table or the rows as a chart. Its speaker notes list the sheet's figures and their sources.
 
 Apps and animations run walled off from the rest of Horizon Calc: they can't see your other documents or your key, and can't reach the internet. Changing a number in an app changes nothing in your sheet until you click **Apply to model**.
 
