@@ -75,14 +75,22 @@ Above the 3D grid you can switch to the example's **animation** (✦), which pla
 
 Your documents are kept on your computer, in the app.
 
-## 4. Connect Claude (optional)
+## 4. Connect an AI (optional)
 
-You can use everything without AI. To let Claude draft sheets and dimensions from a sentence, or build a small **app** on cells you select (**Insert › App from selection…**: describe how it should look and what it should do), connect it with your own key:
+You can use everything without AI. With it, the AI drafts sheets and dimensions from a sentence, builds a small **app** on cells you select (**Insert › App from selection…**), and makes **animations** of your numbers (**Insert › Animation from selection…**): you describe how it should look and what it should do, and keep chatting to change it.
 
-1. Sign up at [console.anthropic.com](https://console.anthropic.com), add some credit under **Billing**, then create a key under **API keys**. You pay Anthropic for what you use.
-2. In Horizon Calc, open ⋯ › **Claude key…**, paste the key and click **Save key**.
+Horizon Calc is made and tested with Claude, and also works with OpenAI, Gemini, OpenRouter, Mistral, Groq, DeepSeek, or models you run yourself with Ollama or LM Studio (no key; on this computer, nothing leaves it). To connect one:
 
-Your key is stored encrypted by your computer's keychain and is only ever sent to Anthropic. Without a key, the AI panel makes simpler drafts by itself, and apps start from a simple built-in design.
+1. Open **File › Models & keys…**. Next to a provider, **Get a key** opens its page: for Claude, sign up at [console.anthropic.com](https://console.anthropic.com), add some credit under **Billing**, and create a key under **API keys**. You pay the provider for what you use.
+2. Click **Add key…**, paste the key and click **Save**. **Test** checks it and lets you choose one of its models.
+
+Keys are stored encrypted by your computer's keychain and only ever sent to their own provider. The AI is told your sheets' labels and formats, never their numbers. Without a model, the AI panel makes simpler drafts by itself, and apps and animations start from simple built-in designs.
+
+### Share your work
+
+- **An app as a file**: under an app, **Export…** saves it as one HTML file that opens in any browser, offline, with only the cells it needs (you see which sheets before saving). Changes there are what-ifs and are never saved.
+- **An animation**: **Export…** on an animation saves it for a [Horizon](https://github.com/BartJanCoppens/Horizon) presentation (it plays live on the slide), as an MP4 video, or as a PowerPoint slide with the video.
+- **A slide**: **Insert as slide › PowerPoint…** saves the slide frame as a PowerPoint slide, with the sheet as a table or the rows as a chart.
 
 Apps and animations run walled off from the rest of Horizon Calc: they can't see your other documents or your key, and can't reach the internet. Changing a number in an app changes nothing in your sheet until you click **Apply to model**.
 
