@@ -92,6 +92,7 @@ Keys are stored encrypted by your computer's keychain and only ever sent to thei
 
 ### Share your work
 
+- **An Excel file**: **File › Export to Excel…** saves the document as an `.xlsx` workbook for someone with only Excel: an Overview (the dimensions, every sheet, a picture of the animation), a worksheet for each sheet with a column for each period and live formulas (change an input and every later period follows), the statements and the sources. Your own documents go in by title only.
 - **An app as a file**: under an app, **Export…** saves it as one HTML file that opens in any browser, offline, with only the cells it needs (you see which sheets before saving). Changes there are what-ifs and are never saved. Its **Sources** panel shows what backs its inputs, naming only web pages: your own documents are never named or quoted.
 - **An animation**: **Export…** on an animation saves it for a [Horizon](https://github.com/BartJanCoppens/Horizon) presentation (it plays live on the slide), as an MP4 video, or as a PowerPoint slide with the video.
 - **A slide**: **Insert as slide › PowerPoint…** saves the slide frame as a PowerPoint slide, with the sheet as a table or the rows as a chart. Its speaker notes list the sheet's figures and their sources.
