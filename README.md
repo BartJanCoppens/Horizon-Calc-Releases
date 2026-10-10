@@ -85,7 +85,7 @@ Your documents are kept on your computer, in the app.
 
 ## 4. Connect an AI (optional)
 
-You can use everything without AI. With it, the AI drafts sheets and dimensions from a sentence, builds a small **app** on cells you select (**Insert › App from selection…**), and makes **animations** of your numbers (**Insert › Animation from selection…**): you describe how it should look and what it should do, and keep chatting to change it.
+You can use everything without AI. With it, the AI drafts sheets and dimensions from a sentence, builds a small **app** on cells you select (**Insert › App from selection…**), and makes **animations** of your numbers (**Insert › Animation from selection…**): you describe how it should look and what it should do, and keep chatting to change it. An app can also use cells of your other documents: with its setup open, switch to the other document, select the cells and click **Add selected cells**.
 
 Horizon Calc is made and tested with Claude, and also works with OpenAI, Gemini, OpenRouter, Mistral, Groq, DeepSeek, or models you run yourself with Ollama or LM Studio (no key; on this computer, nothing leaves it). To connect one:
 
@@ -101,7 +101,7 @@ Keys are stored encrypted by your computer's keychain and only ever sent to thei
 - **An animation**: **Export…** on an animation saves it for a [Horizon](https://github.com/BartJanCoppens/Horizon) presentation (it plays live on the slide), as an MP4 video, or as a PowerPoint slide with the video.
 - **A slide**: **Insert as slide › PowerPoint…** saves the slide frame as a PowerPoint slide, with the sheet as a table or the rows as a chart. Its speaker notes list the sheet's figures and their sources.
 
-Apps and animations run walled off from the rest of Horizon Calc: they can't see your other documents or your key, and can't reach the internet. Changing a number in an app changes nothing in your sheet until you click **Apply to model**.
+Apps and animations run walled off from the rest of Horizon Calc: they see only the cells they were given (an app's may come from several of your documents), never your key, and can't reach the internet. Changing a number in an app changes nothing in your sheets until you click **Apply to model**, which writes it into the document it came from. If an app or animation stops, **Fix with AI** puts its error in the message box for you to read and send.
 
 ## Updates
 
